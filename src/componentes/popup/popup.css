@@ -1,0 +1,90 @@
+ /* Estilo del overlay del pop-up */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  /* Estilo del contenido del pop-up */
+  .popup-content {
+    background: #fff;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 20px 50px 20px 20px #000000b7;
+    background-color: rgba(255, 255, 255, 0.219);
+  }
+  
+  /* Estilo del formulario dentro del pop-up */
+  .email-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    color: #000;
+    flex-wrap: wrap;
+    font-style: bold;
+    justify-content: center;
+  }
+  .email-form .label,
+  .email-form .label2 {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1px 0;
+  }
+  
+  .email-form .label2 {
+    padding: auto;
+  }
+  
+  .email-form .label {
+    flex-basis: 50%;
+  }
+  
+  .email-form .input,
+  .email-form .textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 5px 2px;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 16px;
+  }
+  
+  .email-form .button {
+    margin-right: 40%;
+    background: #00b4e0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .email-form .button:hover {
+    background: #fc5185;
+  }
+  
+.close-button {
+  background: #00b4e0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+ .h3{
+ font-family: 'Playfair Display', serif;
+ font-size: 24px;
+ font-weight: bold;
+}
+
+  

@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0a121d;
+  color: white;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+  background-image: linear-gradient(to bottom, #0a121d, #032136); 
+}
+
+.navbar-right{
+  margin-left: auto;
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent; 
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover::after {
+  background-color: #3fc1c9; 
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+.navbar-right {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; 
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #3fc1c9; 
+  transition: width 0.3s ease-in-out; 
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+}
+
+@media (max-width: 850px) {
+  .navbar-right {
+    display: none; 
+    flex-direction: column; 
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #0a121d, #032136);
+    z-index: 1; 
+  }
+
+  .navbar-right.active {
+    display: flex; 
+  }
+
+  .hamburger-menu {
+    display: block; 
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff; 
+    margin: 6px 0;
+    transition: 0.4s; 
+  }
+
+  .navbar.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .navbar.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
