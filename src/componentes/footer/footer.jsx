@@ -12,7 +12,7 @@ const Footer = () => {
           <p>Email: example@example.com</p>
           <p>Dirección: Cra 80 g-bis No. 43 51 sur</p>
           <p>WhatsApp: +123456789</p>
-          <p>Instagram: @example</p>
+          <p>Instagram: @pyg_consultores_de_seguros</p>
         </div>
 
         <div className="footer-column">

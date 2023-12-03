@@ -10,7 +10,7 @@ const SocialButton = () => {
   };
 
   const handleInstagramClick = () => {
-    window.location.href = 'URL_DE_INSTAGRAM'; // Reemplaza con la URL de Instagram
+    window.location.href = 'https://www.instagram.com/pyg_consultores_de_seguros/'; // Reemplaza con la URL de Instagram
   };
 
   return (
