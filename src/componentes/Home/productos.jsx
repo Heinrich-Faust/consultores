@@ -9,15 +9,26 @@ import personal from './productos/personal.jpg';
 
 
 const Productos = () => {
-    const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleOpenPopup = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+  const handleWhatsAppButtonClick = () => {
+    // Enlace de WhatsApp con el mensaje predefinido
+    const whatsappLink =
+      'https://wa.me/573202841145/?text=Hola%20me%20interesa%20tener%20mayor%20informacion%20sobre%20las%20polizas%20de%20seguros';
+
+    // Redirigir a la página de WhatsApp
+    window.location.href = whatsappLink;
+  };
   
-    const handleOpenPopup = () => {
-      setShowPopup(true);
-    };
-  
-    const handleClosePopup = () => {
-      setShowPopup(false);
-    };
+
   return (
     
     <div>
@@ -38,7 +49,7 @@ const Productos = () => {
                 📬
               </span>
             </button>
-            <button className="pulso">
+            <button className="pulso"  onClick={handleWhatsAppButtonClick}>
               <span role="img" aria-label="Icono de botón 2">
                 📱
               </span>
@@ -59,7 +70,7 @@ const Productos = () => {
                 📬
               </span>
             </button>
-            <button className="pulso">
+            <button className="pulso"  onClick={handleWhatsAppButtonClick}>
               <span role="img" aria-label="Icono de botón 2">
                 📱
               </span>
@@ -90,7 +101,7 @@ const Productos = () => {
                 📬
               </span>
             </button>
-            <button className="pulso">
+            <button className="pulso"  onClick={handleWhatsAppButtonClick}>
               <span role="img" aria-label="Icono de botón 2">
                 📱
               </span>
@@ -111,7 +122,7 @@ const Productos = () => {
                 📬
               </span>
             </button>
-            <button className="pulso">
+            <button className="pulso"  onClick={handleWhatsAppButtonClick}>
               <span role="img" aria-label="Icono de botón 2">
                 📱
               </span>

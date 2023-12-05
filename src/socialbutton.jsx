@@ -6,7 +6,7 @@ import insta from './instagram.png';
 
 const SocialButton = () => {
   const handleWhatsAppClick = () => {
-    window.location.href = 'URL_DE_WHATSAPP'; // Reemplaza con la URL de WhatsApp
+    window.location.href = 'https://wa.me/573202841145/?text=Hola%20me%20interesa%20tener%20mayor%20informacion%20sobre%20las%20polizas%20de%20seguros'; // Reemplaza con la URL de WhatsApp
   };
 
   const handleInstagramClick = () => {
